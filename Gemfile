@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
+#User system
+gem 'devise'
+
 #Windows-compatible bootstrap
 gem 'bootstrap-sass', '~> 3.2.0'
 
