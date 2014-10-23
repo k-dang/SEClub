@@ -3,7 +3,7 @@
 		An Empty Homepage
 		<h1>Announcements</h1>
 		<% @announcements.each do |announcement| %>
-			<%= link_to announcement.title, announcement %>
+			<%= link_to announcement.title %>
 			<br>
 		<% end %>
 	</div>
