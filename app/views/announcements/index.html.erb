@@ -1,0 +1,24 @@
+<h1>Listing announcements</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  <% @announcements.each do |announcement| %>
+    <tr>
+      <td><%= announcement.title %></td>
+      <td><%= announcement.body %></td>
+	  <td><%= link_to 'Show', announcement_path(announcement) %></td>
+	  <% if user_signed_in? and current_user.admin? %>
+	  <td><%= link_to 'Edit', edit_announcement_path(announcement) %></td>
+	  <td><%= link_to 'Destroy', announcement_path(announcement),
+                    method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	  <% end %>
+    </tr>
+  <% end %>
+</table>
+<% if user_signed_in? and current_user.admin? %>
+<%= link_to 'New announcements', new_announcement_path %>
+<% end %>

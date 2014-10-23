@@ -12,7 +12,7 @@ class AnnouncementsController < ApplicationController
 	end
 	
 	def destroy
-		@announcements = Announcements.find(params[:id])
+		@announcements = Announcement.find(params[:id])
 		@announcements.destroy
 		
 		redirect_to dashboard_path
@@ -24,24 +24,20 @@ class AnnouncementsController < ApplicationController
 		if @announcements.save
 			redirect_to @announcements
 		else
-			render 'new'
+			render 'something broke: announcements_controller'
 		end
 	end
 	
 	def edit
-		@announcements = Announcements.find(params[:id])
+		@announcements = Announcement.find(params[:id])
 	end
 		
 	def show
-		@announcements = Announcements.find(params[:id])
-		impressionist(@announcements)
+		@announcements = Announcement.find(params[:id])
 		@author = User.find(@announcements.user_id)
-
-
-		@imageString = @typeArray[@announcements.announcementstype][0]
 	end
 	def update
-		@announcements = Announcements.find(params[:id])
+		@announcements = Announcement.find(params[:id])
 		@announcements.slug = nil
 		if @announcements.update(announcements_params)
 			redirect_to @announcements
@@ -53,7 +49,7 @@ class AnnouncementsController < ApplicationController
 	private
 		# Never trust parameters from the scary internet, only allow the white list through.
 		def announcements_params
-		  params.require(:announcements).permit(:title, :body)
+		  params.require(:announcement).permit(:title,:body)
 		end
 
 end
