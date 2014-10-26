@@ -1,28 +1,40 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is built on Ruby 2.0.0, and Rails 4.0.0.
 
-Things you may want to cover:
+If you are new to Rails, and using Windows, [this](https://github.com/railsinstaller/railsinstaller-windows/releases/download/3.0.0-alpha.2/railsinstaller-3.0.0.exe) installer will give you the correct versions.
 
-* Ruby version
+#Getting Started with git
+To work on this project, you'll want to make a **fork** by clicking the button at the top of this page.  This will make a copy of the repository in your own github account.
 
-* System dependencies
+You should be redirected to https://github.com/YOURUSERNAME/SEClub
 
-* Configuration
+Open up your terminal/command prompt, browse to the directory you want the project in, and type the following, making sure to replace "YOURUSERNAME"
 
-* Database creation
+>git clone https://github.com/YOURUSERNAME/SEClub.git
 
-* Database initialization
+To set up updating for the repository, type
 
-* How to run the test suite
+>git remote add upstream https://github.com/htsui/SEClub.git
 
-* Services (job queues, cache servers, search engines, etc.)
+In the future, to update your repository to keep in sync with the central one (this should be done before you edit any code, if your repository is out of date), type
 
-* Deployment instructions
+>git fetch upstream
 
-* ...
+>git checkout master
 
+>git merge upstream/master
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Then make any changes and additions, and when you're ready, you can
+
+>git add .
+
+This adds all files that have been modified in the current directory.
+
+>git commit -m "Put a short message here detailing your changes"
+
+>git push
+
+Then head to http://github.com/YOURUSERNAME/SEClub, and click "pull request" and fill out the form.
+
+![](http://i.imgur.com/OA7ZfVt.png)
