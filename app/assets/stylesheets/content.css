@@ -22,6 +22,7 @@
     float: right;
     margin-top: 0;
 }
-.textboxhid{
-	
+.hiddenText{
+	display: none;
+	text-align:center;
 }

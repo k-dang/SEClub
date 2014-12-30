@@ -25,32 +25,75 @@
 			<h1 style="text-align:center">Some of our events</h1>
 		</div>
 	</div>
+	<!--Image Start-->
 	<div class="row">
 		
-		<div class="banner col-md-4" style="background: url(/images/pizza.png) no-repeat center center"/>
-			<h2>Pizza Night</h2>
+		<div onclick="toggleMe('#title1','#text1')" class="banner col-md-4" style="background: url(/images/pizza.png) no-repeat center center">
+			<h2 id="title1">Pizza Night</h2> 
+			<p class="hiddenText" id="text1">
+			Held at Boston Pizza students can eat as much pizza they want. The club subsidizes the costs
+			</p>
 		</div>
-		<div class="banner col-md-4" style="background: url(/images/workshops.png) no-repeat center center"/>
+		
+			
+		
+		<div onclick="toggleMe('#text2')" class="banner col-md-4" style="background: url(/images/workshops.png) no-repeat center center">
 			<h2>Workshops</h2>
 		</div>
-		<div class="banner col-md-4" style="background: url(/images/profs.png) no-repeat center center"/>
+		<div class="hiddenText" id="text2">
+			<p align="center">
+			If you are in Software or Computer Science and are looking to get involved or meet other people in your faculty, join the Software Engineering Club! We plan events and discuss topics that we feel are important for Software and Comp Sci students at McMaster. This term we already had a meet the profs night and a Boston Pizza all-you-can-eat pizza and wings night, and we’re currently planning for a games night in the upcoming weeks. Last year we even went paintballing with Tron, had a pool night, a pub night, a sushi dinner, and a bowling night. We also organize fun experiences and trips to conferences such as CUSEC (Canadian University Software Engineering Conference) in Montreal where students are able to meet with active professionals as well as learn about different software job opportunities in the future. Whether you want to be involved in planning events or just check out the SEClub, feel free to stop by! For more details related to the club, go to seclub.mcmaster.ca.
+			</p>
+		</div>
+		<div  onclick="toggleMe('#text3')" class="banner col-md-4" style="background: url(/images/profs.png) no-repeat center center">
 			<h2>Meet The Profs</h2>
 		</div>
+		<div class="hiddenText" id="text3">
+			<p>
+			If you are in Software or Computer Science and are looking to get involved or meet other people in your faculty, join the Software Engineering Club! We plan events and discuss topics that we feel are important for Software and Comp Sci students at McMaster. This term we already had a meet the profs night and a Boston Pizza all-you-can-eat pizza and wings night, and we’re currently planning for a games night in the upcoming weeks. Last year we even went paintballing with Tron, had a pool night, a pub night, a sushi dinner, and a bowling night. We also organize fun experiences and trips to conferences such as CUSEC (Canadian University Software Engineering Conference) in Montreal where students are able to meet with active professionals as well as learn about different software job opportunities in the future. Whether you want to be involved in planning events or just check out the SEClub, feel free to stop by! For more details related to the club, go to seclub.mcmaster.ca.
+			</p>
+		</div>
 
 	</div>
 
+	<!--Image end-->
+	<!--Text starts-->
 
-	
 	<div class="row">
-		<div class="banner col-md-4" style="background: url(/images/cusec.png) no-repeat center center"/>
+		<div onclick="toggleMe('#text4')" class="banner col-md-4" style="background: url(/images/cusec.png) no-repeat center center"/>
 			<h2>CUSEC</h2>	
 		</div>
-		<div class="banner col-md-4" style="background: url(/images/awards.png) no-repeat center center"/>
+				<div class="hiddenText" id="text4">
+			<p>
+			If you are in Software or Computer Science and are looking to get involved or meet other people in your faculty, join the Software Engineering Club! We plan events and discuss topics that we feel are important for Software and Comp Sci students at McMaster. This term we already had a meet the profs night and a Boston Pizza all-you-can-eat pizza and wings night, and we’re currently planning for a games night in the upcoming weeks. Last year we even went paintballing with Tron, had a pool night, a pub night, a sushi dinner, and a bowling night. We also organize fun experiences and trips to conferences such as CUSEC (Canadian University Software Engineering Conference) in Montreal where students are able to meet with active professionals as well as learn about different software job opportunities in the future. Whether you want to be involved in planning events or just check out the SEClub, feel free to stop by! For more details related to the club, go to seclub.mcmaster.ca.
+			</p>
+		</div>
+		<div onclick="toggleMe('#text5')" class="banner col-md-4" style="background: url(/images/awards.png) no-repeat center center"/>
 			<h2>Awards Night</h2>	
 		</div>
-		<div class="banner col-md-4" style="background: url(/images/games.png) no-repeat center center"/>
+				<div class="hiddenText" id="text5">
+			<p>
+			If you are in Software or Computer Science and are looking to get involved or meet other people in your faculty, join the Software Engineering Club! We plan events and discuss topics that we feel are important for Software and Comp Sci students at McMaster. This term we already had a meet the profs night and a Boston Pizza all-you-can-eat pizza and wings night, and we’re currently planning for a games night in the upcoming weeks. Last year we even went paintballing with Tron, had a pool night, a pub night, a sushi dinner, and a bowling night. We also organize fun experiences and trips to conferences such as CUSEC (Canadian University Software Engineering Conference) in Montreal where students are able to meet with active professionals as well as learn about different software job opportunities in the future. Whether you want to be involved in planning events or just check out the SEClub, feel free to stop by! For more details related to the club, go to seclub.mcmaster.ca.
+			</p>
+		</div>
+		<div onclick="toggleMe('#text6')" class="banner col-md-4" style="background: url(/images/games.png) no-repeat center center"/>
 			<h2>Games Night</h2>	
 		</div>
+				<div class="hiddenText" id="text6">
+			<p>
+			If you are in Software or Computer Science and are looking to get involved or meet other people in your faculty, join the Software Engineering Club! We plan events and discuss topics that we feel are important for Software and Comp Sci students at McMaster. This term we already had a meet the profs night and a Boston Pizza all-you-can-eat pizza and wings night, and we’re currently planning for a games night in the upcoming weeks. Last year we even went paintballing with Tron, had a pool night, a pub night, a sushi dinner, and a bowling night. We also organize fun experiences and trips to conferences such as CUSEC (Canadian University Software Engineering Conference) in Montreal where students are able to meet with active professionals as well as learn about different software job opportunities in the future. Whether you want to be involved in planning events or just check out the SEClub, feel free to stop by! For more details related to the club, go to seclub.mcmaster.ca.
+			</p>
+		</div>
 	</div>
-
 </div>
+<!--Script for toggling-->
+<script type="text/javascript">
+	function toggleMe(title,text) {
+		$( title ).toggle( "slow", function() {
+		// Animation complete.
+		});
+		$( text ).toggle( "slow", function() {
+		// Animation complete.
+		});
+	}
+</script>>
