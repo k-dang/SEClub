@@ -1,4 +1,5 @@
 SEClub::Application.routes.draw do
+  get 'team' => 'team#index'
   get "home/index"
   devise_for :users
   

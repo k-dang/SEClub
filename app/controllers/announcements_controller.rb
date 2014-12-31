@@ -36,6 +36,7 @@ class AnnouncementsController < ApplicationController
 		@announcements = Announcement.find(params[:id])
 		@author = User.find(@announcements.user_id)
 	end
+	
 	def update
 		@announcements = Announcement.find(params[:id])
 		@announcements.slug = nil
