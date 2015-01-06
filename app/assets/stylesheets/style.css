@@ -1,0 +1,18 @@
+#img{
+	margin: 0 auto;
+}
+#first{
+	margin: 0 auto;
+	height: 500px;
+	width: 750px;
+}
+
+.carousel .carousel-control { visibility: hidden; }
+.carousel:hover .carousel-control { 
+	visibility: visible; }
+
+.carousel-control.left, 
+.carousel-control.right {
+	color: #800000;
+    background-image: none
+}
