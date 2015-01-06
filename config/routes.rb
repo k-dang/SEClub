@@ -1,5 +1,6 @@
 SEClub::Application.routes.draw do
-  get 'team' => 'team#index'
+  get '/team' => 'team#index'
+  get '/contact' => 'contact#new'
   get "home/index"
   devise_for :users
   
