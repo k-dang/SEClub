@@ -1,10 +1,11 @@
 SEClub::Application.routes.draw do
   get '/team' => 'team#index'
-  get '/contact' => 'contact#new'
+  # get '/contact' => 'contact#new'
   get "home/index"
   devise_for :users
   
   resources :announcements
+  resources :contacts
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

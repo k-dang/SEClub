@@ -1,0 +1,22 @@
+<h1>Contact Us!</h1>
+<%= form_for :contact,  url: contacts_path do |f| -%>
+  <p>
+    <%= f.label :Name %><br>
+    <%= f.text_field :title %>
+  </p>
+ 
+  <p>
+    <%= f.label :Email %><br>
+    <%= f.text_field :email %>
+  </p>
+
+   <p>
+    <%= f.label :Message %><br>
+    <%= f.text_area :body %>
+  </p>
+ 
+  <p>
+    <%= f.submit :Contact%>
+  </p>
+<% end %>
+<hr>
