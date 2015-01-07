@@ -3,8 +3,8 @@
 }
 #first{
 	margin: 0 auto;
-	height: 500px;
-	width: 750px;
+	height: 1000px;
+	width: 1000px;
 }
 
 .carousel .carousel-control { visibility: hidden; }
