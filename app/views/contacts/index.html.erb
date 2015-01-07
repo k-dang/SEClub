@@ -1,0 +1,14 @@
+<% if user_signed_in? %>
+<h1>Listing people who contacted</h1>
+ 
+<% if !@contacts.blank? %>
+  <% for item in @contacts %>
+    <%= item.title %> <%= item.email %> <%= item.body %> <br>
+  <%end%>
+<%else%>
+<%end%> 
+<% else %>
+
+You must <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %> to view emails
+
+<% end %>

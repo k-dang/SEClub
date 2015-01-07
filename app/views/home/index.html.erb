@@ -1,10 +1,11 @@
 <div class = "container">
 	<div class = "well">
 		An Empty Homepage
-		<h1>Announcements</h1>
+		<h1>Announcements Ruby on Rails Test!</h1>
 		<% @announcements.each do |announcement| %>
 			<%= link_to announcement.title, announcement %>
 			<br>
 		<% end %>
+	<%= flash_messages %>
 	</div>
 </div>
