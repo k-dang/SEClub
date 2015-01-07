@@ -6,4 +6,7 @@ class HomeController < ApplicationController
   	current_user.update_attribute :admin, true
   	render :inline => "You are now an admin."
   end
+  def calendar
+
+  end
 end
