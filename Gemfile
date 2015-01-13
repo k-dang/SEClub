@@ -43,6 +43,8 @@ end
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0'
+# paperclip for upload
+gem "paperclip", "~> 4.2"	
 
 # Use unicorn as the app server
 # gem 'unicorn'

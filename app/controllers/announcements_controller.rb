@@ -17,7 +17,6 @@ class AnnouncementsController < ApplicationController
 		
 		redirect_to dashboard_path
 	end
-	
 	def create
 		@announcements = Announcement.new(announcements_params)
 		@announcements.user_id = current_user.id
