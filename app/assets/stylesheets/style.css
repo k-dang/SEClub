@@ -1,10 +1,10 @@
 #img{
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 }
 #first{
-	margin: 0 auto;
-	height: 1000px;
-	width: 1000px;
+	/*margin: 0 auto;*/
+	height: 50%;
+	width: 100%;
 }
 
 .carousel .carousel-control { visibility: hidden; }
